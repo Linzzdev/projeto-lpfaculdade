@@ -1,4 +1,4 @@
-import { tech } from "../../data/techdata.js"
+import { technologies } from "../../data/technologies.js"
 
 export const SectionServices = () => {
     return(
@@ -14,10 +14,16 @@ export const SectionServices = () => {
                 <h2>
                 Conheça as nossas tecnologias.
                 </h2>
-                <div>
-                    <img src={tech.img}></img>
-                    <h2>{tech.name}</h2>
-                    <p>{tech.desc}</p>
+                <div> 
+                    <ul>
+                        {technologies.map(tech => (
+                            <li key={tech.index} >
+                                <img src={tech.img}></img>
+                                <h2>{tech.name}</h2>
+                                <p>{tech.desc}</p>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
           </section>
