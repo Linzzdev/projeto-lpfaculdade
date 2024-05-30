@@ -1,10 +1,11 @@
 import logoW from '/src/assets/whatsapp-icon.png'
 import logoL from '/src/assets/linkedin-icon.png'
 import logoG from '/src/assets/github-icon.png'
+import style from './index.module.scss'
 
 export const Footer = () =>{
     return(
-        <footer>
+        <footer className={style.footer} >
             <h2>Caso tenha se interessado por nossos serviços<br/> por favor nos contate.</h2>
             <img src={logoW}></img>
             <img src={logoL}></img>

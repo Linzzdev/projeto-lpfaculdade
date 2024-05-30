@@ -1,0 +1,17 @@
+.section{
+    display: flex;
+    padding-top: 8rem;
+    background-color: #F2F2F2;
+    height: 40rem;
+}
+.div1{
+    margin-left: 19.8rem;
+    width: 35rem;
+    padding-right: 18.5rem;
+    & > h2 {
+        font-size: 25px;
+        font-weight: bolder;
+        padding-bottom: 2rem;
+        color: #232956;
+    }
+}

@@ -1,10 +1,10 @@
-import logo from '/src/assets/logowcopy-removebg-preview.png'
+import style from './index.module.scss'
 
 export const Header = () =>{
     return(
-    <header>
-        <img src={logo}></img>
-        <ul>
+    <header className={style.header} >
+        <ul className={style.ul}>
+            <h1>Athon.</h1>
             <li>INÍCIO</li>
             <li>SOBRE NÓS</li>
             <li>SERVIÇOS</li>

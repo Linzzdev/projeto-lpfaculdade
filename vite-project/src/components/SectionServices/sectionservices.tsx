@@ -1,9 +1,10 @@
 import { technologies } from "../../data/technologies.js"
+import style from './index.module.scss'
 
 export const SectionServices = () => {
     return(
-        <section>
-            <div>
+        <section className={style.section} >
+            <div className={style.div1} >
             <h2>Transforme sua empresa com a nossa expertise em digitalização!</h2>
         <p> Cuidamos da sua presença online para você focar no que realmente importa: o seu negócio <br/>
          Não fique para trás! A digitalização é essencial para o sucesso da sua empresa. <br/>
@@ -18,9 +19,9 @@ export const SectionServices = () => {
                     <ul>
                         {technologies.map(tech => (
                             <li key={tech.index} >
-                                <img src={tech.img}></img>
                                 <h2>{tech.name}</h2>
                                 <p>{tech.desc}</p>
+                                <img src={tech.img}></img>
                             </li>
                         ))}
                     </ul>

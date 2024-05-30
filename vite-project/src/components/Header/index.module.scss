@@ -1,0 +1,45 @@
+
+
+.ul {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    width: 80rem;
+    margin: auto;
+    margin-left: 20rem;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 8px 5px -5px #232956; 
+    -moz-box-shadow: 0px 8px 5px -5px #232956;
+    box-shadow: 0px 8px 5px -5px #232956;
+  
+    & > h1 {
+      font-size: 32px;
+      color: #232956;
+      display: flex; 
+      padding-right: 20rem;
+      align-items: center; 
+      justify-content: center; 
+      font-weight: bold;
+    }
+  
+    li {
+      height: 10rem;
+      font-size: 15px;
+      font-weight: bold;
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
+      color: #232956;
+    }
+    li:hover{
+        text-decoration: underline;
+    }
+  }
+  
+  .header {
+    background-color: white;
+    height: 12rem;
+    
+
+  }
