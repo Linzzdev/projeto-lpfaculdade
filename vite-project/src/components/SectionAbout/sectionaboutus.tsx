@@ -1,9 +1,9 @@
 import { SectionServices } from '../SectionServices/sectionservices'
 import style from './index.module.scss'
 
-export const SectionAbout = () =>{
+export const SectionAbout = ({handleLinkClick}) => {
     return(
-        <section className={style.section} >
+        <section  id="sectionAbout" className={style.section} >
             <div className={style.div1} >
             <h2>Quem somos ?</h2>
             <p>Somos um time de jovens apaixonados por tecnologia e inovação<br/>
@@ -23,7 +23,9 @@ export const SectionAbout = () =>{
                 aprendendo novas tecnologias para oferecer o melhor serviço para você.</p>
              </p>
              <br/>
-             <button>Entre em Contato</button>              {/* Fazer esse botao redirecionar para a sectionservices */}
+             <a href="#footerContacts" onClick={(e) => handleLinkClick(e, 'footerContacts')}>
+            <button>Contatos</button>
+             </a>
              </div>
              <SectionServices/>
         </section>

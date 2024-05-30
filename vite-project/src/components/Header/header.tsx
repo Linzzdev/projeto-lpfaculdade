@@ -1,15 +1,26 @@
 import style from './index.module.scss'
 
-export const Header = () =>{
+export const Header = ({handleLinkClick}) =>{
     return(
-    <header className={style.header} >
+    <header  id="header" className={style.header} >
         <ul className={style.ul}>
             <h1>Athon.</h1>
-            <li>INÍCIO</li>
-            <li>SOBRE NÓS</li>
-            <li>SERVIÇOS</li>
-            <li>CONHECIMENTOS</li>
-            <li>CONTATO</li>
+            <li>
+            <a href="#sectionMain" onClick={(e) => handleLinkClick(e, 'sectionMain')}>INÍCIO </a>
+            </li>
+
+            <li>
+            <a href="#sectionPj" onClick={(e) => handleLinkClick(e, 'servicesPj')}>SOBRE NÓS</a>
+            </li>
+            <li>
+            <a href="#sectionPj" onClick={(e) => handleLinkClick(e, 'servicesPj')}>CONHECIMENTOS</a>
+            </li>
+            <li>
+            <a href="#servicesPj" onClick={(e) => handleLinkClick(e, 'sectionPj')}>SERVIÇOS</a>
+            </li>
+            <li>
+            <a href="#footerContacts" onClick={(e) => handleLinkClick(e, 'footerContacts')}>CONTATO</a>
+            </li>
         </ul>
     </header>
     )

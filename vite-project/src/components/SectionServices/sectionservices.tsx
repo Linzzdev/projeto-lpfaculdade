@@ -1,10 +1,9 @@
 import { technologies } from "../../data/technologies.js"
 import style from './index.module.scss'
-import { SectionMain } from "../SectionMain/sectionmain.js"
 
 export const SectionServices = () => {
     return(
-        <section className={style.section} >
+        <section id="servicesPj"  className={style.section} >
              <div className={style.div1} >
              <h2>Transforme sua empresa com <br/> a nossa expertise em digitalização!</h2>
              <p> Cuidamos da sua presença online para você focar no que realmente importa:<br/> o seu negócio

@@ -1,5 +1,5 @@
 .section{
-    height: 50rem;
+    height: 45rem;
     & > h2{
         font-size: 35px;
         font-weight: bold;
@@ -12,14 +12,15 @@
 
 
 .li{
-        width: 40rem;
-        height: 17rem;
-        border-radius: 10px;
+        width: 38rem;
+        height: 17rem;  
         display: flex;
         flex-direction: row;
+        padding-bottom: 2rem;
     & > img{
-        width: 25rem;
-        height: 17rem;
+        border-radius: 15px;
+        width: 20rem;
+        height: 12rem;
     }
 }
 
@@ -36,30 +37,35 @@
 
 .div1{
     & > h3{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: bold;
         color: #232956;
-        margin: 1rem;
+        margin-left: 1rem;
     }
     
     p{
-        font-size: 16px;
+        font-size: 14px;
         color: #232956;
         margin: 0;
         padding: 0;
         font-weight: bold;
-        padding-bottom: 1rem;
-        margin: 1rem;
+        padding-bottom: 2rem;
+        margin-left: 1rem;
+
     } a{
         text-decoration: none;
-        margin: 1rem;
-        color: #2962FF;
+        color: white;
         font-weight: bold;
         font-size: 16px;
+        margin-left: 1rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        background-color: #2962FF;
+        border-radius: 10px;
     }
     
     a:hover{
-        color: #2962FF;
+        background-color: #232956;
+        color: white;
         text-decoration: underline;
         font-weight: bold;
     } 
