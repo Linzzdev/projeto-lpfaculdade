@@ -1,3 +1,4 @@
+import { SectionServices } from '../SectionServices/sectionservices'
 import style from './index.module.scss'
 
 export const SectionAbout = () =>{
@@ -10,22 +11,21 @@ export const SectionAbout = () =>{
              estamos sempre em busca de novos desafios e aprendizados<br/>
              Acreditamos no poder da colaboração e da criatividade<br/> para criar soluções que impactem positivamente o mundo<br/>
              sendo a empresa de desenvolvimento web pioneira no brasil.
-             </p>
-             <br/>
-             <button>Nossos Serviços</button>              {/* Fazer esse botao redirecionar para a sectionservices */}
-             </div>
-             <div className={style.div2} >
-                <h2>FAQ:</h2>
-                <h3>Quanto tempo leva para criar um site?</h3>
+             <h3>FAQ:</h3>
+                <h4>Quanto tempo leva para criar um site?</h4>
                 <p>O tempo varia conforme a complexidade do projeto um site simples pode <br/>
                 levar algumas semanas enquanto um mais complexo pode levar meses.</p>
-                <h4>Vocês fazem otimização para mecanismos de busca (SEO)?</h4>
+                <h5>Vocês fazem otimização para mecanismos de busca (SEO)?</h5>
                 <p>Implementamos técnicas básicas de SEO para ajudar seu site a ter um bom <br/>
                 posicionamento no Google e outros buscadores.</p>
-                <h5>Vocês são estagiários, têm experiência?</h5>
+                <h6>Vocês são estagiários, têm experiência?</h6>
                 <p>Somos supervisionados por profissionais experientes e estamos sempre <br/>
                 aprendendo novas tecnologias para oferecer o melhor serviço para você.</p>
+             </p>
+             <br/>
+             <button>Entre em Contato</button>              {/* Fazer esse botao redirecionar para a sectionservices */}
              </div>
+             <SectionServices/>
         </section>
     )
 }

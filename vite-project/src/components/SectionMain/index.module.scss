@@ -6,12 +6,15 @@
     height: 50rem;
 } 
 .div1{
-    margin-left: 20rem;
+    padding-top: 13rem;
+    height: 18.7rem;
+    position: sticky;
+        top: 0;
+    margin-left: 19rem;
     & > h2{
         font-size: 40px;
         color: #232956;
         margin: auto;
-        padding-top: 13rem;
         font-weight: bold;
         padding-bottom: 1rem;
     }
@@ -34,6 +37,8 @@
     }
     .div2{
         height: 40rem;
+            position: sticky;
+        top: 0;
         & > img{
             height: 40rem;
             width: 64.3rem;

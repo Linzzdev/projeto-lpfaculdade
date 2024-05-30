@@ -2,24 +2,27 @@
 
 
 .section{
-    padding-top: 5rem;
+    padding-top: 2rem;
     display: flex;
-    height: 20rem;
+    flex-direction: row;
+    height: 60rem;
     background-color: #F2F2F2;
 
 } .div1{
-    margin-left: 20rem;
-    width: 45rem;
+    margin-left: 19rem;
+    height: 40.5rem;
+    width: 42.3rem;
+    position: sticky;
+    padding-right: 0.5rem;
+    top: 0;
     & > h2{
         font-size: 35px;
-        font-weight: bolder;
+        font-weight: bold;
         color: #232956;
-        padding-top: 2.5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     } p{
         color: black;
         font-size: 17px;
-        padding-bottom: 1.3rem;
     }
     button{
         background-color: #2962FF;
@@ -31,31 +34,34 @@
         height: 3rem;
         font-family: "Inter", sans-serif ;
     }
-}
-.div2{
-    height: 20rem;
-    & > h2{
-        font-size: 35px;
-        font-weight: bolder;
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
         color: #232956;
-        padding-top: 2.5rem;
-        padding-bottom: 2rem;
-    } h3{
-        padding-bottom: 0.5rem;
-        font-weight: bolder;
-        color: #232956;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
     }
-    h4{
-        padding-bottom: 0.5rem;
-        font-weight: bolder;
+    h4 {
+        font-size: 25px;
+        font-weight: bold;
         color: #232956;
+        padding-bottom: 1rem;
+
     }
-    h5{
-        padding-bottom: 0.5rem;
-        font-weight: bolder;
+    h5 {
+        font-size: 25px;
+        font-weight: bold;
         color: #232956;
-    } p{
-        padding-bottom: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    h6 {
+        font-size: 25px;
+        font-weight: bold;
+        color: #232956;
+        padding-bottom: 1rem;
+    }
+    p{
+        padding-bottom: 1rem;
     }
 }
     

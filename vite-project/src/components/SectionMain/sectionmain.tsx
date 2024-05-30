@@ -7,7 +7,7 @@ export const SectionMain = () => {
             <div className={style.div1} >
             <h2>Desenvolvimento <br/> Pessoal e <br/> Profissional </h2>
             <p>Buscamos aprimorar nossos conhecimentos <br/> e pratica em desenvolvimento.</p>
-            <button>Entre em contato</button>
+            <button>Nossos Serviços</button>
             </div>
             <div className={style.div2} >
             <img src={img}></img>
