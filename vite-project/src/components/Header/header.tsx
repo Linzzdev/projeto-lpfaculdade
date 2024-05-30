@@ -1,6 +1,6 @@
 import style from './index.module.scss'
 
-export const Header = ({handleLinkClick}) =>{
+export const Header = ({ handleLinkClick }: { handleLinkClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void }) =>{
     return(
     <header  id="header" className={style.header} >
         <ul className={style.ul}>

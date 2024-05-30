@@ -7,29 +7,31 @@ import { SectionPj } from "./components/SectionOurPj/sectionpj"
 
 
 function App() {
-  const handleLinkClick = (event, targetId) => {
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     event.preventDefault();
     const targetSection = document.getElementById(targetId);
 
-    targetSection.scrollIntoView({
+    if (targetSection) {
+      targetSection.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
       inline: 'nearest',
     });
 
-    let start = null;
-    const duration = 800; // Duração da animação em milissegundos (ajuste conforme desejado)
+    let start: number | null = null; 
+    const duration = 800; 
 
-    function step(timestamp) {
+    function step(timestamp: number) {
       if (!start) start = timestamp;
       const progress = timestamp - start;
-      const easing = (t) => t * t * t; // Função de easing (suavização) - ajuste conforme desejado
-      window.scrollTo(0, easing(progress / duration) * (targetSection.offsetTop - window.pageYOffset) + window.pageYOffset);
+      const easing = (t: number) => t * t * t; 
+      window.scrollTo(0, easing(progress / duration) * (targetSection!.offsetTop - window.pageYOffset) + window.pageYOffset);
       if (progress < duration) window.requestAnimationFrame(step);
     }
 
     window.requestAnimationFrame(step);
   };
+}
 
   
 

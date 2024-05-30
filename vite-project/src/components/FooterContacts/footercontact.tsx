@@ -2,7 +2,7 @@ import logoL from '/src/assets/linkedin-icon.png'
 import logoG from '/src/assets/github-icon.png'
 import style from './index.module.scss'
 
-export const Footer = ({handleLinkClick}) =>{
+export const Footer = ({ handleLinkClick }: { handleLinkClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void }) =>{
 
     return(
         <footer id="footerContacts"  className={style.footer} >

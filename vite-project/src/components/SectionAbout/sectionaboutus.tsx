@@ -1,7 +1,7 @@
 import { SectionServices } from '../SectionServices/sectionservices'
 import style from './index.module.scss'
 
-export const SectionAbout = ({handleLinkClick}) => {
+export const SectionAbout = ({ handleLinkClick }: { handleLinkClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void })  => {
     return(
         <section  id="sectionAbout" className={style.section} >
             <div className={style.div1} >

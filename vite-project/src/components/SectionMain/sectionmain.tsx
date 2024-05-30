@@ -1,7 +1,7 @@
 import style from './index.module.scss';
 import img from '../../assets/imgcapa.png';
 
-export const SectionMain = ({handleLinkClick}) => {
+export const SectionMain = ({ handleLinkClick }: { handleLinkClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void }) => {
 
   return (
     <section className={style.section} id="sectionMain">
