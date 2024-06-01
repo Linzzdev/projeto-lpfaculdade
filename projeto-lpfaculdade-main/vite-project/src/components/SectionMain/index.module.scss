@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.section{
+    display: flex;
+    background-color: white;
+    height: 50rem;
+} 
+.div1{
+    padding-top: 13rem;
+    height: 17.6rem;
+    position: sticky;
+        top: 0;
+    margin-left: 19rem;
+    & > h2{
+        font-size: 40px;
+        color: #232956;
+        margin: auto;
+        font-weight: bold;
+        padding-bottom: 1rem;
+    }
+    p{
+        color:  #232956;
+        font-size: 15px;
+        font-weight: bold;
+        padding-bottom: 2rem;
+    }
+    button{
+        background-color: #2962FF;
+        border: 2px solid #2962FF;
+        color: white;
+        font-weight: bold;
+        border-radius: 1rem;
+        width: 10rem;
+        height: 3rem;
+        font-family: "Inter", sans-serif ;
+    }
+    }
+    .div2{
+        height: 40rem;
+            position: sticky;
+        top: 0;
+        & > img{
+            height: 40rem;
+            width: 64.3rem;
+        }
+}
