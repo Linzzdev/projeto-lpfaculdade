@@ -1,48 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+.header {
+  background-color: white;
+  height: 12rem;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding-bottom: 10rem;
 
-.ul {
+  .ul {
     display: flex;
+    width: 95rem;
+    height: 4.6rem;
     flex-direction: row;
-    height: 10rem;
-    width: 80rem;
-    margin: auto;
-    margin-left: 19rem;
     justify-content: space-between;
-    -webkit-box-shadow: 0px 8px 5px -5px #232956; 
-    -moz-box-shadow: 0px 8px 5px -5px #232956;
+    align-items: center;
     box-shadow: 0px 8px 5px -5px #232956;
-  
-    & > h1 {
-      font-size: 32px;
-      color: #232956;
-      display: flex; 
-      padding-right: 20rem;
-      align-items: center; 
-      justify-content: center; 
-      font-weight: bold;
-    }
-  
+
+
     li {
-      height: 10rem;
-      display: flex; 
-      flex-direction: column; 
-      align-items: center; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
+
       & > a {
         color: #232956;
         font-size: 15.1px;
         font-weight: bold;
         text-decoration: none;
+      } h1 { 
+        font-size: 32px;
+        color: #232956;
+        font-weight: bold;
+      }
+
+      &:hover {
+        a { 
+          text-decoration: underline;
+        }
       }
     }
-    li:hover{
-        text-decoration: underline;
-    }
   }
-  
-  .header {
-    background-color: white;
-    height: 12rem;
-    
-
-  }
+}

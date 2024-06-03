@@ -1,10 +1,11 @@
 import style from './index.module.scss';
-import img from '../../assets/imgcapa.png';
+import img from '../../assets/desenvolvimento.jpeg';
 
 export const SectionMain = ({ handleLinkClick }: { handleLinkClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void }) => {
 
   return (
     <section className={style.section} id="sectionMain">
+      <div className={style.container} >
       <div className={style.div1}>
         <h2>Desenvolvimento <br /> Pessoal e <br /> Profissional</h2>
         <p>Buscamos aprimorar nossos conhecimentos <br /> e prática em desenvolvimento.</p>
@@ -14,6 +15,7 @@ export const SectionMain = ({ handleLinkClick }: { handleLinkClick: (event: Reac
       </div>
       <div className={style.div2}>
         <img src={img} alt="Imagem de Capa" />
+      </div>
       </div>
     </section>
   );

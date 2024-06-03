@@ -4,7 +4,7 @@ export const Header = ({ handleLinkClick }: { handleLinkClick: (event: React.Mou
     return(
     <header  id="header" className={style.header} >
         <ul className={style.ul}>
-            <h1>Athon.</h1>
+            <li><h1>Athon.</h1></li>
             <li>
             <a href="#sectionMain" onClick={(e) => handleLinkClick(e, 'sectionMain')}>INÍCIO </a>
             </li>

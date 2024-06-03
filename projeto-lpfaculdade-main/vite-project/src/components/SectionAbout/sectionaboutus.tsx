@@ -4,6 +4,7 @@ import style from './index.module.scss'
 export const SectionAbout = ({ handleLinkClick }: { handleLinkClick: (event: React.MouseEvent<HTMLAnchorElement>, id: string) => void })  => {
     return(
         <section  id="sectionAbout" className={style.section} >
+            <div className={style.container} >
             <div className={style.div1} >
             <h2>Quem somos ?</h2>
             <p>Somos um time de jovens apaixonados por tecnologia e inovação<br/>
@@ -28,6 +29,7 @@ export const SectionAbout = ({ handleLinkClick }: { handleLinkClick: (event: Rea
              </a>
              </div>
              <SectionServices/>
+             </div>
         </section>
     )
 }

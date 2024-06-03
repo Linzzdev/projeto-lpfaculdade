@@ -5,7 +5,6 @@ import style from './index.module.scss'
 export const SectionPj = () => {
         return(
             <section id = "sectionPj" className={style.section} >
-                <h2>Serviços Realizados</h2>
                 <ul className={style.ul}>
                     {projects.map(project =>(
                         <li  className={style.li} key={project.index}>
